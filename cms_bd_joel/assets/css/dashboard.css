@@ -1,0 +1,25 @@
+.color-bashboard-left{
+	background: -webkit-linear-gradient(#00c6ff 20%, #028fe5 100%);
+	background: -o-linear-gradient(#00c6ff 20%, #028fe5 100%);
+	background: linear-gradient(#00c6ff 20%, #028fe5 100%);
+	height: 100vh;
+}
+
+.color-bashboard-left h2{
+	text-align: center;
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+.available{
+	color: green;
+}
+.signout{
+	color: red;
+}
+
+#loader-image img{
+	display: block;
+	margin: auto;
+}
+

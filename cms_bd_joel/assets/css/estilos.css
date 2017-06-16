@@ -1,0 +1,97 @@
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	min-height: 100vh;
+	background: -webkit-linear-gradient(#00c6ff 20%, #028fe5 100%);
+	background: -o-linear-gradient(#00c6ff 20%, #028fe5 100%);
+	background: linear-gradient(#00c6ff 20%, #028fe5 100%);
+	font-family: 'Open Sans', sans-serif;
+}
+
+form{
+	margin: auto;
+	width: 60%;
+	max-width: 600px;
+	background: #fff;
+	padding: 60px 30px;
+	border-radius: 5px;
+	filter: drop-shadow(0 0 2em rgba(0,0,0,0.1));
+	-webkit-filter: drop-shadow(0 0 2em rgba(0,0,0,0.1));
+}
+
+h2{
+	margin-top: 15px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 40px;
+	color: gray;
+	text-transform: uppercase;
+}
+
+input{
+	display: block;
+	padding: 10px 40px;
+	width: 100%;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin: 25px 0; 
+	color: gray;
+	border: none;
+	outline: none;
+}
+
+.form-input::before{
+	content: "\f007";
+	position: absolute;
+	font-family: "FontAwesome";
+	font-size: 28px;
+	padding: 10px 10px 10px 0;
+	color: #F96D6E;
+}
+
+.form-input:nth-child(3)::before{
+	content: "\f023";
+}
+
+input::-webkit-input-placeholder{
+	color: gray;
+}
+
+input[type="text"],
+input[type="password"] {
+	border: none;
+	border-bottom: 2px solid #00c6ff;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+	transition: 1s all;
+	border-bottom: 2px solid #00e7ff;
+}
+
+input[type="submit"] {
+	background: #00c6ff;
+	color: #CBFDFD;
+	font-size: 16px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: all 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+	background: #F96D6E;
+}
+
+@media screen and (max-width: 480px){
+	form{
+		width: 80%;
+	}
+}
